@@ -21,7 +21,7 @@ class AirportsViewModel {
         let strUrl = "https://aerodatabox.p.rapidapi.com/airports/search/location/\(lat)/\(long)/km/\(radius)/16"
         guard let url = URL(string: strUrl) else { return }
         
-        var request = URLRequest(url: url,timeoutInterval: Double.infinity)
+        var request = URLRequest(url: url, timeoutInterval: Double.infinity)
         request.addValue("b540cdde7dmsh09bbba1c2bc4285p1f5f5bjsn454d7d321d4c", forHTTPHeaderField: "x-rapidapi-key")
         request.addValue("aerodatabox.p.rapidapi.com", forHTTPHeaderField: "x-rapidapi-host")
 
